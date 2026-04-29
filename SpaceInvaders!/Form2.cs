@@ -22,7 +22,7 @@ namespace SpaceInvaders_
         {
             InitializeComponent();
 
-            gameSound=new SoundPlayer("C:\\Users\\vladf\\source\\repos\\Ahbreh\\SpaceInvaders-\\SpaceInvaders!\\Resources\\game music.wav");
+            gameSound = new SoundPlayer(Properties.Resources.game_music);
         }
         private void StartGame(string difficulty, int invNum)
         {

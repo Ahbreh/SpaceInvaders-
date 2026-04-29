@@ -62,8 +62,8 @@ namespace SpaceInvaders_
             invNum = invadersNumber;
             power = powerUp;
             walls = obstacles;
-            shootSound = new SoundPlayer("C:\\Users\\vladf\\source\\repos\\Ahbreh\\SpaceInvaders-\\SpaceInvaders!\\Resources\\pew-pew.wav");
-            gameoverSound = new SoundPlayer("C:\\Users\\vladf\\source\\repos\\Ahbreh\\SpaceInvaders-\\SpaceInvaders!\\Resources\\game over.wav");
+            shootSound = new SoundPlayer(Properties.Resources.pew_pew);
+            gameoverSound = new SoundPlayer(Properties.Resources.game_over);
             gamesetup();
         }
 
@@ -276,7 +276,8 @@ namespace SpaceInvaders_
             for (int i = 0; i < Invaders.Length; i++)
             {
                 Invaders[i] = new PictureBox();
-                Invaders[i].Size = new Size(Convert.ToInt32 (60 * scale), Convert.ToInt32 (50 * scale));
+                Invaders[i].Size = new Size(Convert.ToInt32 (60 * scale), 
+                                            Convert.ToInt32 (50 * scale));
                 switch (difficulty)
                 {
                     case "Easy":

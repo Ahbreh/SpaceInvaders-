@@ -21,7 +21,7 @@ namespace SpaceInvaders_
         public Form3(int score, string Name)
         {
             InitializeComponent();
-            endMusic = new SoundPlayer("C:\\Users\\vladf\\source\\repos\\Ahbreh\\SpaceInvaders-\\SpaceInvaders!\\Resources\\end screen music.wav");
+            endMusic = new SoundPlayer(Properties.Resources.end_screen_music);
             SaveHighScore (score, Name);
         }
 
